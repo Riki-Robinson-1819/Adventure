@@ -1,0 +1,21 @@
+def start():
+    name = input("Whats Your Name")
+    q1()
+def anserError():
+    print("Please use one of the possible choices. CHECK SPELLING!")
+
+def q1():
+    q1answer = input("The next day you run into your friend and he offers to give you 100 dollars to take a bag and keep it over the weekend! Do you say Yes or no to the offer?")
+    if q1answer == ("yes"):
+        q2()
+    elif q1answer == ("no"):
+        q1wrong()
+    else:
+        anserError()
+        q1()
+
+def q1wrong():
+    print("Your friend is not happy with your answer and spreads a rumor around the school that you peed your pants!")
+    start()
+
+start()
